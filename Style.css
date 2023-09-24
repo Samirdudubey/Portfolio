@@ -1,0 +1,356 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Common styles for all screen sizes */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F2F7FF;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav .left {
+  font-size: 1.5rem;
+  color: lightslategray;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+nav ul li a:hover {
+  color: #FF9900;
+  font-size: 1.2rem;
+}
+
+/* Main section styles */
+main {
+  padding: 20px;
+}
+
+/* First section styles */
+.firstsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  text-align: center;
+}
+
+.firstsection .leftsection {
+  flex: 1;
+  padding: 20px;
+}
+
+.firstsection .leftsection h1,
+.firstsection .leftsection h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.firstsection .leftsection h2 {
+  color: #ffa600;
+  margin: 10px 0;
+}
+
+.firstsection .leftsection p {
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+.firstsection .rightsection {
+  flex: 1;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.firstsection .rightsection img {
+  max-width: 65%;
+  height: auto;
+  border-radius: 50%;
+  border: 10px solid #ffc400;
+  box-sizing: border-box;
+}
+
+/* Social links styles */
+.social {
+  display: flex;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.social a {
+  margin: 0 10px;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Second section styles */
+.secondsection {
+  background: linear-gradient(135deg, #2980b9, #e74c3c, #27ae60, #f39c12);
+  background-size: 600% 600%;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 20px 0;
+  text-align: center;
+}
+
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.secondsection .Tools {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.secondsection .Tools h1 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.secondsection .Tools ul {
+  list-style: none;
+  padding: 0;
+}
+
+.secondsection .Tools li {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: black;
+  list-style-type: circle;
+}
+
+.secondsection .Tools li:hover {
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Third section styles */
+.Thirdsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.Thirdsection .Projects {
+  border-radius: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto;
+}
+
+.Thirdsection .Projects h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px ;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.Thirdsection .Projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 15px;
+}
+
+.Thirdsection .Projects li {
+  flex-basis: calc(33.33% - 20px);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 0 5px black;
+}
+
+/* Fourth section styles */
+.FourthSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.FourthSection h2 {
+  font-size: 28px;
+  color: #333;
+  margin-top: 100px;
+}
+
+.FourthSection p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #555;
+  }
+  100% {
+    color: #66b3ff;
+  }
+}
+
+/* Contact Form styles */
+.ContactForm {
+  max-width: 400px;
+  width: 90%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.ContactForm label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.ContactForm input[type="text"],
+.ContactForm input[type="email"],
+.ContactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ContactForm input[type="text"]:focus,
+.ContactForm input[type="email"]:focus,
+.ContactForm textarea:focus {
+  border-color: #007bff;
+}
+
+.ContactForm button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.ContactForm button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.ContactForm .message {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.ContactForm .success-message {
+  color: #008000;
+}
+
+.ContactForm .error-message {
+  color: #ff0000;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .firstsection .leftsection,
+  .firstsection .rightsection {
+    width: 100%;
+    text-align: center;
+  }
+
+  .firstsection .rightsection {
+    margin-top: 20px;
+  }
+
+  .social {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .social a {
+    margin: 0 10px;
+  }
+
+  .secondsection .Tools {
+    max-width: 90%;
+  }
+
+  .Thirdsection .Projects {
+    width: 100%;
+  }
+
+  .FourthSection h2 {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .FourthSection p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .ContactForm {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">[Sameer Portfolio]</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <span>
+                    <h1>Hi! I Am</h1>
+                </span>
+                <span>
+                    <h2>Sameer Dubey</h2>
+                </span>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="Sameerpic.jpg" alt="Sameer's Picture">
+
+            </div>
+        </section>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/sameer-dubey-929649249" target="_blank" rel="noopener noreferrer">
+                <img src="asd.jpeg" alt="LinkedIn Profile" width="40" height="40">
+            </a>
+             
+
+             
+
+        </div>
+        <section class="secondsection">
+            <div class="Tools">
+                <h1>Skills</h1>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>DSA</li>
+                    <li>OOPS</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </section>
+        <section class="Thirdsection">
+            <div class="Projects">
+                <h1>Projects</h1>
+                <ul>
+                
+                    <li> 
+                        <h2>To-Do-List</h2>
+                        <p>
+                            My To-Do List application incorporates essential features such as data persistence, enabling
+                            users to save and load their task lists for future use. It also offers the ability to
+                            categorize tasks into different lists or projects, facilitating better organization
+                        </p>
+                        <p>
+                            Technologies Used: Java , Swing
+                        </p>
+                    </li>
+                    <li>
+                        <h2>QR Code Generator</h2>
+                        <p>
+                            The QR Code Scanner project highlights my expertise in Java development, user interface
+                            design, data processing, and error handling. It showcases my ability to create user-friendly
+                            applications capable of efficiently handling and decoding QR codes containing substantial
+                            data payloads..
+                        </p>
+                        <p>
+                            Technologies Used: Java , Swing
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="FourthSection">
+            <h2>Contact Me</h2>
+            <p>Feel free to get in touch!</p>
+            <div class="ContactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Passionate and dedicated computer science student, I specialize in Java programming, where I have honed my skills in creating efficient and elegant solutions to complex problems. My coursework has provided me a solid foundation in data structures and algorithms.</i>',],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
